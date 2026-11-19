@@ -1,41 +1,42 @@
 /**
  * GYMAPORT Color System
- * Aviation-inspired premium dark theme
+ * Aviation-inspired premium dark theme — Navy + Amber Gold
  */
 
 export const Colors = {
-  // Core backgrounds
+  // Core backgrounds — deep navy blue
   bg: {
-    primary: '#0A0A0F',
-    secondary: '#111118',
-    tertiary: '#1A1A24',
-    card: '#16161F',
-    cardElevated: '#1E1E2A',
-    input: '#1A1A24',
-    overlay: 'rgba(10, 10, 15, 0.85)',
+    primary: '#0A0E1A',
+    secondary: '#0D1526',
+    tertiary: '#131D33',
+    card: '#0F1B30',
+    cardElevated: '#162035',
+    input: '#0D1830',
+    overlay: 'rgba(10, 14, 26, 0.88)',
   },
 
   // Brand accents
   accent: {
-    blue: '#00B4FF',
-    blueDark: '#0080CC',
-    blueLight: '#33C6FF',
-    blueMuted: 'rgba(0, 180, 255, 0.15)',
-    gold: '#FFD700',
-    goldDark: '#CC9900',
-    goldLight: '#FFE44D',
-    goldMuted: 'rgba(255, 215, 0, 0.15)',
+    blue: '#1E90FF',
+    blueDark: '#0060CC',
+    blueLight: '#5BB0FF',
+    blueMuted: 'rgba(30, 144, 255, 0.15)',
+    gold: '#FFB800',
+    goldDark: '#CC8800',
+    goldLight: '#FFD04D',
+    goldMuted: 'rgba(255, 184, 0, 0.18)',
+    goldGlow: 'rgba(255, 184, 0, 0.35)',
   },
 
   // Typography
   text: {
     primary: '#FFFFFF',
-    secondary: '#A0A0B8',
-    tertiary: '#606075',
-    disabled: '#404050',
-    inverse: '#0A0A0F',
-    accent: '#00B4FF',
-    gold: '#FFD700',
+    secondary: '#A8B4CC',
+    tertiary: '#5A6880',
+    disabled: '#3A4458',
+    inverse: '#0A0E1A',
+    accent: '#1E90FF',
+    gold: '#FFB800',
     danger: '#FF4444',
     success: '#00CC88',
     warning: '#FFB800',
@@ -49,17 +50,18 @@ export const Colors = {
     warningMuted: 'rgba(255, 184, 0, 0.15)',
     danger: '#FF4444',
     dangerMuted: 'rgba(255, 68, 68, 0.15)',
-    info: '#00B4FF',
-    infoMuted: 'rgba(0, 180, 255, 0.15)',
+    info: '#1E90FF',
+    infoMuted: 'rgba(30, 144, 255, 0.15)',
+    error: '#FF4444',
   },
 
   // Borders
   border: {
-    subtle: 'rgba(255, 255, 255, 0.06)',
-    default: 'rgba(255, 255, 255, 0.10)',
-    strong: 'rgba(255, 255, 255, 0.20)',
-    accent: 'rgba(0, 180, 255, 0.40)',
-    gold: 'rgba(255, 215, 0, 0.40)',
+    subtle: 'rgba(255, 255, 255, 0.07)',
+    default: 'rgba(255, 255, 255, 0.12)',
+    strong: 'rgba(255, 255, 255, 0.22)',
+    accent: 'rgba(30, 144, 255, 0.40)',
+    gold: 'rgba(255, 184, 0, 0.45)',
   },
 
   // Glassmorphism
@@ -67,37 +69,40 @@ export const Colors = {
     light: 'rgba(255, 255, 255, 0.05)',
     medium: 'rgba(255, 255, 255, 0.08)',
     strong: 'rgba(255, 255, 255, 0.12)',
-    blue: 'rgba(0, 180, 255, 0.08)',
-    gold: 'rgba(255, 215, 0, 0.08)',
+    blue: 'rgba(30, 144, 255, 0.08)',
+    gold: 'rgba(255, 184, 0, 0.08)',
   },
 
   // Muscle group colors (for body map)
   muscle: {
     priority: '#FF4444',
     balanced: '#00CC88',
-    strong: '#00B4FF',
-    unanalyzed: '#404050',
+    strong: '#1E90FF',
+    unanalyzed: '#3A4458',
   },
 
   // Chart colors
   chart: {
-    line1: '#00B4FF',
+    line1: '#1E90FF',
     line2: '#00CC88',
-    line3: '#FFD700',
-    area: 'rgba(0, 180, 255, 0.20)',
+    line3: '#FFB800',
+    area: 'rgba(30, 144, 255, 0.20)',
     grid: 'rgba(255, 255, 255, 0.05)',
   },
 
   // Gradients (as arrays for LinearGradient)
   gradient: {
-    primary: ['#0A0A0F', '#111118'],
-    card: ['#16161F', '#1A1A24'],
-    accent: ['#00B4FF', '#0060AA'],
-    gold: ['#FFD700', '#CC9900'],
-    splash: ['#0A0A0F', '#0D1420', '#0A0A0F'],
+    primary: ['#0A0E1A', '#0D1526'],
+    card: ['#0F1B30', '#131D33'],
+    accent: ['#1E90FF', '#0060CC'],
+    gold: ['#FFB800', '#CC7700'],
+    goldButton: ['#FFB800', '#E8930A'],
+    sky: ['#0A1428', '#102040', '#1A3060', '#0D1526'],
+    skyHero: ['#0D1A3A', '#1A3060', '#2B4E8C', '#1A3060', '#0A0E1A'],
+    splash: ['#0A0E1A', '#0D1A3A', '#0A0E1A'],
     danger: ['#FF4444', '#CC0000'],
     success: ['#00CC88', '#009966'],
-    blue_glow: ['rgba(0,180,255,0.3)', 'rgba(0,180,255,0)'],
+    gold_glow: ['rgba(255,184,0,0.5)', 'rgba(255,184,0,0)'],
   },
 } as const;
 

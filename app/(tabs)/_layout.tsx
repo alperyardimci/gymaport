@@ -1,65 +1,62 @@
 import { Tabs } from 'expo-router';
-import { useTranslation } from 'react-i18next';
 import { Ionicons } from '@expo/vector-icons';
 import { Colors } from '@/constants/Colors';
 import { Typography } from '@/constants/theme';
 
 export default function TabsLayout() {
-  const { t } = useTranslation();
-
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
         tabBarStyle: {
-          backgroundColor: Colors.bg.card,
-          borderTopColor: Colors.border.subtle,
+          backgroundColor: '#0A0E1A',
+          borderTopColor: 'rgba(255,255,255,0.08)',
           borderTopWidth: 1,
           height: 80,
           paddingBottom: 16,
           paddingTop: 8,
         },
-        tabBarActiveTintColor: Colors.accent.blue,
+        tabBarActiveTintColor: Colors.accent.gold,
         tabBarInactiveTintColor: Colors.text.tertiary,
         tabBarLabelStyle: {
           fontSize: Typography.size.xs,
-          fontWeight: Typography.weight.medium,
+          fontWeight: Typography.weight.semibold,
         },
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
-          title: t('nav.home'),
+          title: 'Ana Sayfa',
           tabBarIcon: ({ color, size }) => <Ionicons name="home" size={size} color={color} />,
         }}
       />
       <Tabs.Screen
         name="workout"
         options={{
-          title: t('nav.workout'),
+          title: 'Antrenman',
           tabBarIcon: ({ color, size }) => <Ionicons name="barbell" size={size} color={color} />,
         }}
       />
       <Tabs.Screen
         name="ai-body"
         options={{
-          title: t('nav.ai_body'),
-          tabBarIcon: ({ color, size }) => <Ionicons name="scan" size={size} color={color} />,
+          title: 'Analiz',
+          tabBarIcon: ({ color, size }) => <Ionicons name="bar-chart" size={size} color={color} />,
         }}
       />
       <Tabs.Screen
         name="learn"
         options={{
-          title: t('nav.learn'),
+          title: 'Eğitim',
           tabBarIcon: ({ color, size }) => <Ionicons name="book" size={size} color={color} />,
         }}
       />
       <Tabs.Screen
         name="profile"
         options={{
-          title: t('nav.profile'),
-          tabBarIcon: ({ color, size }) => <Ionicons name="person" size={size} color={color} />,
+          title: 'Ayarlar',
+          tabBarIcon: ({ color, size }) => <Ionicons name="settings" size={size} color={color} />,
         }}
       />
     </Tabs>
